@@ -1,0 +1,127 @@
+
+    @keyframes exshadowAnim {
+      from {
+        box-shadow: 0 0 15px #ccc;
+      }
+      to {
+        box-shadow: 0 0 30px #a333c885;
+      }
+    }
+
+    .bottomRender {
+      padding: 10px 0;
+      background: #fff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      text-align: center;
+      animation-name: exshadowAnim;
+      animation-duration: 1s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+
+    .highlight {
+      border-radius: 2px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .highlight:hover {
+      background: #3a8aff;
+      color: #fff;
+      transition: all .3s;
+    }
+
+    .wrong {
+      background: red;
+      color: #fff;
+    }
+
+    .correct {
+      background: #29ce29;
+      color: #fff;
+    }
+
+    .letter {
+      cursor: pointer;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      margin: 5px;
+      border-radius: .28571429rem;
+      border: 1px solid rgba(34, 36, 38, .15);
+      box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+      text-align: center;
+      display: inline-block;
+      font-size: 22px;
+      user-select: none;
+    }
+
+    .letterSelected {
+      font-size: 22px;
+      padding: 3px;
+      text-decoration: underline;
+      cursor: pointer;
+      transition: .5s all;
+    }
+
+    .letterSelected:hover {
+      /* color: #a333c8; */
+    }
+
+    .contain {
+      width: 500px;
+      margin: 20px auto;
+      box-shadow: 0 0 5px #ccc;
+      padding: 10px 10px;
+    }
+
+    .translation {
+      cursor: pointer;
+      transition: all .3s;
+    }
+
+    .translation:hover {
+      color: #3a8aff
+    }
+
+    .navLinks {
+      /* background: #ccc; */
+    }
+
+    .activeNav {
+      /* border-bottom: 1px solid; */
+      color: white !important;
+      background: #a333c8;
+    }
+
+    .trainColumn {
+      margin-bottom: 25px;
+      cursor: pointer;
+    }
+
+    .trainColumn>div:hover {
+      transition: .5s all;
+      box-shadow: 0 2px 8px rgb(204, 204, 204)
+    }
+
+
+    .navLinks>a {
+      display: inline-block;
+      padding: 8px;
+      color: #fff;
+      color: #a333c8;
+      font-weight: bold;
+      transition: .5s all;
+    }
+    .stick{
+      position: absolute;
+      /* padding: 0 15px; */
+      top:0;
+      left: 0;
+      width: 100%
+    }
+    .fixed.sticky .grid{
+      padding-top: 15px;
+      border-bottom: 1px solid #f4f2f2;
+    }
